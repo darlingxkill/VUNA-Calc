@@ -72,8 +72,7 @@ function appendPercentage() {
 function calculatePercentage(expression) {
   const parts = expression.split("%");
 
-  if (parts.length !== 2) return null;
-
+  if (parts.length !== 2) return null;d
   const percent = parseFloat(parts[0]);
   const number = parseFloat(parts[1]);
 
@@ -239,4 +238,8 @@ function updateStepsDisplay() {
   if (!stepsDiv) return;
 
   stepsDiv.innerText = steps.join("\n");
+}
+
+function insertPi() {
+    appendToResult(Math.PI.toFixed(6))
 }
